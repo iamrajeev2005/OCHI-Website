@@ -2,7 +2,7 @@ import React from "react";
 
 function Navbar() {
   return (
-    <div className="flex items-center justify-between text-zinc-800 px-12 py-4">
+    <div className="fixed z-[999] w-full flex items-center justify-between text-zinc-800 px-12 py-4 font-['Neue Montreal']">
       <div>
         <svg
           width="72"
@@ -39,7 +39,7 @@ function Navbar() {
             return (
               <a
                 href=""
-                className={`text-[1.2vw] tracking-tight text-zinc-700 font-semibold ${
+                className={`text-[1.2vw] tracking-tight text-zinc-700 font-normal ${
                   index === 4 && "ml-56"
                 }`}
               >
