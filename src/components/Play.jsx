@@ -19,7 +19,7 @@ function Play() {
     <div className="w-full h-screen overflow-hidden">
       <div
         data-scroll
-        data-scroll-speed="-.7"
+        data-scroll-speed="-.4"
         className='relative h-screen w-full bg-cover bg-center bg-[url("https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-1440x921.jpg")]'
       >
         <div className="w-fit h-fit absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[40%] flex gap-10">

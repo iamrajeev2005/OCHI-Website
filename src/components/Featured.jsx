@@ -7,6 +7,9 @@ function Featured() {
         Featured projects
       </h1>
       <div className="w-full border-t-[1px] border-[#9c9c9c] mt-10"></div>
+      <div className="card-container">
+        
+      </div>
     </div>
   );
 }

@@ -4,8 +4,7 @@ function About() {
   return (
     <div
       data-scroll
-      data-scroll-section
-      data-scroll-speed="-.2"
+      data-scroll-speed="-.3"
       className="w-full min-h-screen bg-[#CDEA68] rounded-tl-3xl rounded-tr-3xl"
     >
       <div className="pt-20 px-12 pb-10">
