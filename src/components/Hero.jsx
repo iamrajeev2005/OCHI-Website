@@ -1,15 +1,26 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { IoMdArrowUp } from "react-icons/io";
 
 function Hero() {
   return (
-    <div className="w-full h-screen bg-zinc-100 pt-1 ">
+    <div
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="-.3"
+      className="w-full h-screen bg-zinc-100 pt-1 "
+    >
       <div className="px-12 font-[FG] font-bold mt-36 tracking-tighter text-zinc-800">
         {["WE CREATE", "EYE-OPENING", "PRESENTATIONS"].map((item, index) => {
           return (
             <div className="flex items-center">
               {index === 1 && (
-                <div className="h-[6.1vw] w-[9.5vw] bg-[url('https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg')] bg-cover rounded-lg mr-[.8vw] relative top-2"></div>
+                <motion.div
+                  initial={{ width: 0 }}
+                  animate={{ width: "9.5vw" }}
+                  transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
+                  className="h-[6.1vw] w-[9.5vw] bg-[url('https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg')] bg-cover rounded-lg mr-[.8vw] relative top-2"
+                ></motion.div>
               )}
               <div className="text-9xl w-fit leading-[7vw]">{item}</div>
             </div>
