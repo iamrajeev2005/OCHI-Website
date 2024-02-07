@@ -7,6 +7,7 @@ import Play from "./components/Play";
 import Featured from "./components/Featured";
 import Reviews from "./components/Reviews";
 import LocomotiveScroll from "locomotive-scroll";
+import Cards from "./components/Cards";
 
 function App() {
   
@@ -21,6 +22,7 @@ function App() {
       <Play />
       <Featured />
       <Reviews/>
+      <Cards/>
     </div>
   );
 }
