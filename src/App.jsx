@@ -5,6 +5,7 @@ import Marquee from "./components/Marquee";
 import About from "./components/About";
 import Play from "./components/Play";
 import Featured from "./components/Featured";
+import Reviews from "./components/Reviews";
 import LocomotiveScroll from "locomotive-scroll";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <About />
       <Play />
       <Featured />
+      <Reviews/>
     </div>
   );
 }

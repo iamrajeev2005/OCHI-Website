@@ -20,7 +20,6 @@ function Featured() {
     },
   ];
 
-  
   const tags = [
     {
       tag1: "AUDIT",
@@ -51,7 +50,35 @@ function Featured() {
       <div className="card-container w-full px-12 py-10 gap-4 flex flex-wrap">
         {data.map((item, index) => {
           return (
-            <div className="card w-[49.3%] ">
+            <div className="group relative w-[49.3%] pb-10">
+              {index === 0 && (
+                <div className="absolute top-[50%] -right-[15%] z-[55] -translate-y-[50%] overflow-hidden">
+                  <h1 className="heading text-[#CDEA68] text-9xl font-[FG] translate-y-[80%] group-hover:translate-y-0 transition-transform duration-500 ">
+                    FYDE
+                  </h1>
+                </div>
+              )}
+              {index === 1 && (
+                <div className="absolute top-[50%] -left-[15%] z-[55] -translate-y-[50%] overflow-hidden">
+                  <h1 className="heading text-[#CDEA68] text-9xl font-[FG] translate-y-[80%] group-hover:translate-y-0 transition-transform duration-500 ">
+                    VISE
+                  </h1>
+                </div>
+              )}
+              {index === 2 && (
+                <div className="absolute top-[50%] -right-[20%] z-[55] -translate-y-[50%] overflow-hidden">
+                  <h1 className="heading text-[#CDEA68] text-9xl font-[FG] translate-y-[80%] group-hover:translate-y-0 transition-transform duration-500 ">
+                    TRAWA
+                  </h1>
+                </div>
+              )}
+              {index === 3 && (
+                <div className="absolute top-[50%] -left-[45%] z-[55] -translate-y-[50%] overflow-hidden">
+                  <h1 className="heading text-[#CDEA68] text-9xl font-[FG] translate-y-[80%] group-hover:translate-y-0 transition-transform duration-500 ">
+                    PREMIUM BLEND
+                  </h1>
+                </div>
+              )}
               <h5 className="text-sm">
                 <span className="inline-block h-3 w-3 bg-zinc-900 rounded-full mr-2"></span>
                 {item.name}
@@ -64,20 +91,25 @@ function Featured() {
                 />
               </div>
               <div className="tag flex items-center gap-3 text-sm">
-               {tags.map((item,index)=>{
-                return (
-                  <a
-                    className="py-1 px-3 border border-zinc-900 rounded-full"
-                    href=""
-                  >
-                    {item.tag1}
-                  </a>
-                );
-               })}
+                {tags.map((item, index) => {
+                  return (
+                    <a
+                      className="py-1 px-3 border border-zinc-900 rounded-full"
+                      href=""
+                    >
+                      {item.tag1}
+                    </a>
+                  );
+                })}
               </div>
             </div>
           );
         })}
+      </div>
+      <div className="flex items-center justify-center font-[NU]">
+        <button className="text-white bg-zinc-900 rounded-full px-5 py-3">
+          VIEW ALL CASE STUDIES
+        </button>
       </div>
     </div>
   );
