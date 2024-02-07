@@ -1,4 +1,5 @@
 import React from "react";
+import { IoMdArrowUp } from "react-icons/io";
 
 function Hero() {
   return (
@@ -14,6 +15,28 @@ function Hero() {
             </div>
           );
         })}
+      </div>
+      <div className="w-full border-t-[1px] mt-24 font-[NU] border-zinc-400 flex items-center justify-between px-12 py-3">
+        {[
+          "For public and private companies",
+          "From the first pitch to IPO",
+        ].map((item, index) => {
+          return (
+            <h3
+              className={`text-zinc-800 ${index === 1 && "ml-36"}  font-medium`}
+            >
+              {item}
+            </h3>
+          );
+        })}
+        <div className="flex items-center gap-1">
+          <button className="px-3 py-1 border border-zinc-800 text-zinc-700 rounded-full text-sm">
+            START THE PROJECT
+          </button>
+          <button className="p-2 border border-zinc-800 text-zinc-700 rounded-full text-md font-thin rotate-45">
+            <IoMdArrowUp />
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -39,7 +39,7 @@ function Navbar() {
             return (
               <a
                 href=""
-                className={`text-[1.2vw] tracking-tight text-zinc-700 font-normal ${
+                className={`text-[1.2vw] tracking-tight text-zinc-900 font-normal ${
                   index === 4 && "ml-56"
                 }`}
               >
