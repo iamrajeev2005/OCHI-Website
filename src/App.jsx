@@ -8,21 +8,24 @@ import Featured from "./components/Featured";
 import Reviews from "./components/Reviews";
 import LocomotiveScroll from "locomotive-scroll";
 import Cards from "./components/Cards";
+import ReadyStart from "./components/ReadyStart";
+import Footer from "./components/Footer";
 
 function App() {
-  
   const locomotiveScroll = new LocomotiveScroll();
 
   return (
-    <div className="h-screen w-full  relative">
+    <div className="h-screen w-full relative">
       <Navbar />
       <Hero />
       <Marquee />
       <About />
       <Play />
       <Featured />
-      <Reviews/>
-      <Cards/>
+      <Reviews />
+      <Cards />
+      <ReadyStart />
+      <Footer />
     </div>
   );
 }

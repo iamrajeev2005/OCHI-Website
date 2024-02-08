@@ -12,7 +12,7 @@ function Cards() {
     },
   ];
   return (
-    <div className="w-full min-h-screen bg-zinc-100 flex items-center justify-between  px-12">
+    <div className="cards w-full min-h-screen bg-zinc-100 flex items-center justify-between  px-12">
       <div className="bg-[#004D43] w-[44vw] h-[55vh] rounded-lg flex items-center gap-2 justify-center relative">
         <img
           className="w-[10vw] h-[4vw]"
