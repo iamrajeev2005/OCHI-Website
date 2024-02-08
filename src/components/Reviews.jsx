@@ -44,7 +44,7 @@ function Reviews() {
     },
   ];
   return (
-    <div className="min-h-screen w-full bg-zinc-100 ">
+    <div className="min-h-screen w-full bg-zinc-100 pt-32 ">
       <h1 className="text-5xl font-[NU] px-12 text-[#181616]">
         Clients' reviews
       </h1>
@@ -80,15 +80,15 @@ function Reviews() {
         <h5 className="text-zinc-400">READ</h5>
       </div>
       <div className="w-full border-t-[1px] border-[#9c9c9c] mt-10"></div>
-        {data.map((item, index) => {
-          return (
-            <div className="flex px-12 py-2 text-zinc-800 font-[NU] items-center justify-between border-b-[1px] border-[#9c9c9c]">
-              <h2>{item.name}</h2>
-              <h2>{item.author}</h2>
-              <h2>{item.read}</h2>
-            </div>
-          );
-        })}
+      {data.map((item, index) => {
+        return (
+          <div className="flex px-12 py-2 text-zinc-800 font-[NU] items-center justify-between border-b-[1px] border-[#9c9c9c]">
+            <h2>{item.name}</h2>
+            <h2>{item.author}</h2>
+            <h2>{item.read}</h2>
+          </div>
+        );
+      })}
     </div>
   );
 }
